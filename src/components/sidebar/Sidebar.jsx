@@ -42,6 +42,12 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
+        <div className="bottom center">
+          <ul>
+            <li>Help</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
     </div>
   );
 };

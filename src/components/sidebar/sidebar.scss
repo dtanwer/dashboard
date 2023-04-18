@@ -1,6 +1,9 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
   padding: 3.5rem;
-  min-height: 100vh;
+  height: 130vh;
+  width: 13rem;
   margin: 2rem;
   border-radius: 3rem;
   background-color:black;
@@ -50,16 +53,19 @@
 
   .bottom{
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: flex-end;
+      align-items:baseline;
       margin: 1rem;
+      color: white;
+  }
+}
 
-      .colorOption{
-          width: 20px;
-          height: 20px;
-          border-radius: 5px;
-          border: 1px solid #7451f8;
-          cursor: pointer;
-          margin: 5px;
-      }
+
+@media (max-width:998px) {
+  .sidebar
+  {
+    height: 100%;
   }
 }

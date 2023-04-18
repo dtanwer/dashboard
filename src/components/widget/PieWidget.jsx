@@ -1,6 +1,5 @@
 import React from 'react';
 import Chart from "chart.js/auto";
-import "./widget.scss";
 import { Pie } from "react-chartjs-2";
 
 export default function PieWidget() {
@@ -22,7 +21,7 @@ export default function PieWidget() {
     }]
   };
   return (
-      <div className="widget" style={{height:"250px"}} >
+      <div className="widget" style={{minHeight:"240px",minWidth:"350px"}} >
       <div className="left">
         <span className="title">Top products</span>
         <span className="counter">
@@ -30,7 +29,7 @@ export default function PieWidget() {
         </span>
       </div>
       <div className="right">
-      May - June 2021
+     <p> May - June 2021</p>
       </div>
     </div>
   )
