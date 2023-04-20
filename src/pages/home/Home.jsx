@@ -9,6 +9,29 @@ import Meeting from "../../components/widget/Meeting";
 
 
 const Home = () => {
+  const data=[
+    {
+      type:'earning',
+      value:'2,129,430',
+      ismoney:true
+    },
+    {
+      type:'transaction',
+      value:'1,520',
+      ismoney:false
+    },
+    {
+      type:'like',
+      value:'9,721',
+      ismoney:false
+    },
+    {
+      type:'user',
+      value:'892',
+      ismoney:false
+    }
+  ]
+
   const [toggle, setToggle] = useState(true);
   const onclickMenu = () => {
     console.log(toggle);
@@ -27,10 +50,11 @@ const Home = () => {
         <div className="homeContainer">
           <Navbar />
           <div className="widgets">
-            <Widget type="earning" />
-            <Widget type="transaction" />
-            <Widget type="like" />
-            <Widget type="user" />
+            {
+              data.map(it=>(
+                <Widget item={it} />
+              ))
+            }
           </div>
           <div className="charts">
             <Mychart />

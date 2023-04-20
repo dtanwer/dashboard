@@ -5,17 +5,15 @@ import ThumbUpOffAltOutlinedIcon from '@mui/icons-material/ThumbUpOffAltOutlined
 import CurrencyExchangeOutlinedIcon from '@mui/icons-material/CurrencyExchangeOutlined';
 
 
-const Widget = ({ type }) => {
+const Widget = ({ item }) => {
   let data={
-    title:"abc",
+    title:"",
     isMoney:false,
     icon:""
   };
   //temporary
   const amount = 100;
-  const diff = 20;
-
-  switch (type) {
+  switch (item.type) {
     case "user":
       data = {
         title: "Total User",
@@ -74,7 +72,7 @@ const Widget = ({ type }) => {
       <div className="left">
         <span className="title">{data?.title}</span>
         <span className="counter">
-          {data?.isMoney && "$"} {amount}
+          {data?.isMoney && "$"} {item.value}
         </span>
       </div>
       <div className="right">

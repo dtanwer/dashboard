@@ -11,13 +11,12 @@
             font-size: larger;
         }
     }
-    #m1{
-       
-        border-left: 5px solid red;
-    }
-    #m2{
+    div:nth-child(odd) {
         border-left: 5px solid green;
-    }
+      }
+    div:nth-child(even) {
+        border-left: 5px solid red;
+      }
 }
 .right{
     justify-content: end;
