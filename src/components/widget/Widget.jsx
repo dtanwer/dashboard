@@ -11,8 +11,6 @@ const Widget = ({ item }) => {
     isMoney:false,
     icon:""
   };
-  //temporary
-  const amount = 100;
   switch (item.type) {
     case "user":
       data = {

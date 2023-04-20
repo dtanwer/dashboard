@@ -28,11 +28,6 @@ const Mychart = () => {
       dataLabels: {
         enabled: false
       },
-      
-
-      dataLabels: {
-        enabled: false,
-      },
       legend: {
         show: false
       },
@@ -58,10 +53,6 @@ const Mychart = () => {
           },
       },
       
-    
-    dataLabels: {
-      enabled: false
-    },
       title: {
         text: 'Activities',
         align: 'left',
@@ -72,12 +63,6 @@ const Mychart = () => {
         align:'left',
         offsetX: 14
       },
-      legend: {
-        position: 'top',
-        horizontalAlign: 'right',
-        offsetX: -10
-      },
-    
       xaxis: {
         
         categories: [
