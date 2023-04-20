@@ -1,21 +1,21 @@
 body{
-    background: #F5F5F5;
-    
+  background: #F5F5F5;
+  
 
 }
 
 html{
-    font-size: 64%;
+  font-size: 64%;
 }
 
 
 @media (max-width:998px) {
-    html{
-        font-size:55%;
-    }
+  html{
+      font-size:55%;
+  }
 }
 @media (max-width:600px) {
-    html{
-        font-size:50%;
-    }
+  html{
+      font-size:50%;
+  }
 }

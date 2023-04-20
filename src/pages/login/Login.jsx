@@ -1,7 +1,6 @@
 import React from 'react'
 import './Login.scss'
 import { NavLink } from 'react-router-dom'
-
 export default function Login() {
   return (
     <div className='cont'>
